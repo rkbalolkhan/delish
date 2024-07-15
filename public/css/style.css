@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 *,
 *::after,
 *::before {
-  outline: 0 !important;
-  outline-offset: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :active,
@@ -20,7 +22,7 @@ a:hover {
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 ul,
@@ -76,7 +78,7 @@ h2 {
   font-weight: 700;
   font-size: 2.25rem;
   text-transform: capitalize;
-  font-family: var(--secondary-color);
+  font-family: var(--secondary-font);
   color: var(--secondary-color);
   line-height: 3rem;
 }
@@ -112,7 +114,7 @@ p {
   padding: 0.625rem 1.875rem;
   line-height: 1.5625rem;
   background-color: var(--primary-color);
-  border: 0.1875rem soloid var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
   color: var(--white-color);
   font-size: 0.9375rem;
   font-weight: 600;
@@ -148,6 +150,7 @@ p {
 .white-btn:hover {
   background-color: transparent;
   color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .wrapper {
@@ -164,4 +167,66 @@ p {
 .testimonial-section h2,
 .book-food-text h2 {
   color: var(--white-color);
+}
+
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+
+.navigation-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn {
+  padding: 0.3125rem 1.4375rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+
+.navigation-wrap.scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+  transition: all 0.15s ease-in-out 0s;
+}
+
+.top-banner {
+  width: 100%;
+  background: url("../images/bg-1.jpg") no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+}
+
+.counter-section {
+  background-color: var(--primary-color);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.counter-section p {
+  color: var(--white-color);
+  text-transform: uppercase;
 }
