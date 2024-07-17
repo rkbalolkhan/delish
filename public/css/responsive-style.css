@@ -30,6 +30,11 @@
   .top-banner {
     padding: 10.875rem 0 9.375rem;
   }
+
+  .story-section {
+    height: auto;
+    padding: 3rem 0;
+  }
 }
 
 :root {
