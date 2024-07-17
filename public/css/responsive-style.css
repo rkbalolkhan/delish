@@ -16,6 +16,10 @@
   .top-banner {
     padding: 9.375rem 0 9.375rem;
   }
+
+  .testimonial-section .carousel-item .carousel-caption p {
+    padding: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -34,6 +38,16 @@
   .story-section {
     height: auto;
     padding: 3rem 0;
+  }
+
+  .testimonial-section .carousel-item {
+    padding: 11rem 3.125rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .testimonial-section .carousel-item {
+    padding: 13rem 3.125rem;
   }
 }
 
